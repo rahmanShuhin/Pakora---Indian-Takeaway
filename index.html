@@ -1,0 +1,1699 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakora Indian Takeaway, Litherland, Liverpool</title>
+    <meta
+      name="description"
+      content="Order Online for Takeaway / Delivery. Here at Pakora Indian Takeaway - Litherland you'll experience delicious Indian cuisine. Try our mouth-watering dishes, carefully prepared with fresh ingredients! At Pakora Indian Takeaway, our recipe for success is simple – Great food & care makes customers return every time."
+    />
+    <!-- <meta
+      property="og:title"
+      content="Pakora Indian Takeaway, Litherland, Liverpool"
+    />
+
+    <meta
+      property="og:description"
+      content="Order your favorite Indian takeaway online from Pakora and get 15% off! Enjoy authentic Indian cuisine in Litherland with faster delivery and great discounts."
+    />
+    <meta
+      property="og:image"
+      content="https://pakoraliverpool.com/images/landing-food.jpg"
+    /> -->
+    <!-- OG tags — aligned with title -->
+    <meta
+      property="og:title"
+      content="Pakora Indian Takeaway — Litherland, Liverpool"
+    />
+    <meta
+      property="og:description"
+      content="Order online and save 15%. Authentic Indian cuisine freshly prepared on School Lane, Litherland. 4.8★ · 30-min delivery across Merseyside."
+    />
+    <meta
+      property="og:image"
+      content="https://pakoraliverpool.com/images/landing-food.jpg"
+    />
+    <!-- host on your own domain -->
+    <meta property="og:url" content="https://pakoraliverpool.com/" />
+    <meta property="og:type" content="restaurant" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Pakora Indian Takeaway",
+        "url": "https://pakoraliverpool.com",
+        "image": "https://pakoraliverpool.com/images/landing-food.jpg",
+        "telephone": "+441519281895", // ← confirm correct number
+        "email": "info@pakoraliverpool.com",
+        "servesCuisine": ["Indian", "Halal", "Takeaway"],
+        "priceRange": "££",
+        "currenciesAccepted": "GBP",
+        "paymentAccepted": "Cash, Credit Card",
+        "hasMenu": "https://pakoraliverpool.com/#menu",
+
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "36 School Lane",
+          "addressLocality": "Litherland",
+          "addressRegion": "Merseyside",
+          "postalCode": "L21 7LZ",
+          "addressCountry": "GB"
+        },
+
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 53.4721, // ← update with exact coords from Google Maps
+          "longitude": -2.9997
+        },
+
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Thursday", "Friday", "Sunday"],
+            "opens": "16:30",
+            "closes": "22:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "16:00",
+            "closes": "22:00"
+          }
+          // Wednesday omitted = closed (schema.org convention)
+        ],
+
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "920", // ← update this number periodically
+          "bestRating": "5"
+        },
+
+        "menu": {
+          "@type": "Menu",
+          "hasMenuSection": {
+            "@type": "MenuSection",
+            "name": "Featured Dishes",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Chicken Tikka Masala",
+                "description": "Charcoal-grilled chicken in a creamy tomato gravy infused with garam masala.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "11.95",
+                  "priceCurrency": "GBP"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Lamb Biryani",
+                "description": "Slow-cooked basmati rice layered with tender lamb, saffron and fried onions.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "8.30",
+                  "priceCurrency": "GBP"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Chicken Pakora",
+                "description": "Crispy golden-fried chicken coated in a spiced gram flour batter.",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "6.95",
+                  "priceCurrency": "GBP"
+                }
+              }
+            ]
+          }
+        },
+
+        "sameAs": [
+          // Add your social / Google Business / Just Eat / Deliveroo URLs here
+          "https://www.google.com/maps?cid=YOUR_CID"
+        ]
+      }
+    </script>
+    <!-- For .ico format -->
+    <link rel="canonical" href="https://pakoraliverpool.com/" />
+    <link
+      rel="icon"
+      href="./images/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta property="og:url" content="https://pakoraliverpool.com/" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      font-family: &quot;Inter&quot;, sans-serif;
+      background: #0e0907;
+      color: #f5e6d3;
+    "
+  >
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl"
+      style="
+        background: rgba(14, 9, 7, 0.7);
+        border-bottom: 1px solid rgba(245, 230, 211, 0.08);
+      "
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="w-9 h-9 rounded-full flex items-center justify-center"
+            style="background: linear-gradient(135deg, #d97706, #b91c1c)"
+          >
+            <iconify-icon
+              icon="solar:fire-linear"
+              style="color: #fff; font-size: 20px"
+            ></iconify-icon>
+          </div>
+          <span
+            class="text-xl tracking-tight"
+            style="font-family: &quot;Fraunces&quot;, serif; font-weight: 600"
+            >Pakora</span
+          >
+        </div>
+        <div
+          class="hidden md:flex items-center gap-8 text-sm"
+          style="color: rgba(245, 230, 211, 0.7)"
+        >
+          <a href="#menu" class="hover:text-white transition">Menu</a>
+          <a href="#about" class="hover:text-white transition">Our Story</a>
+          <a href="#offer" class="hover:text-white transition">Offers</a>
+          <a href="#location-address" class="hover:text-white transition"
+            >Visit</a
+          >
+
+          <a
+            href="#"
+            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all"
+            style="color: #f59e0b; font-style: italic"
+          >
+            <iconify-icon
+              icon="solar:phone-linear"
+              stroke-width="1.5"
+            ></iconify-icon>
+          </a>
+
+          <span
+            class="reveal-word inline-block"
+            style="color: #f59e0b; font-style: italic"
+            >0151 9281 895</span
+          >
+        </div>
+        <!-- <a
+          href="#order"
+          class="px-5 py-2.5 rounded-full text-sm font-medium transition hover:scale-105"
+          style="
+            background: linear-gradient(135deg, #f59e0b, #dc2626);
+            color: #fff;
+          "
+        >
+          Order Online
+        </a> -->
+        <span
+          class="px-5 py-2.5 rounded-full text-sm font-medium transition hover:scale-105"
+          data-glf-cuid="fbe8deb8-e118-480f-8e80-b93d3adc5c52"
+          data-glf-ruid="ab5d9d03-9d5d-4c56-9f49-5f60fdb3cefa"
+          style="
+            background: linear-gradient(135deg, #f59e0b, #dc2626);
+            color: #fff;
+            cursor: pointer;
+          "
+          >Order Online</span
+        >
+        <script
+          src="https://www.fbgcdn.com/embedder/js/ewm2.js"
+          defer
+          async
+        ></script>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="relative min-h-screen flex items-center pt-20 pb-10 overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fa51902b-c2a4-4c33-a96e-a8f1ef67edc6_3840w.jpg"
+          class="w-full h-full object-cover opacity-30"
+          alt=""
+        />
+        <div
+          class="absolute inset-0"
+          style="
+            background: radial-gradient(
+              ellipse at center,
+              rgba(14, 9, 7, 0.4) 0%,
+              rgba(14, 9, 7, 0.95) 80%
+            );
+          "
+        ></div>
+      </div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center"
+      >
+        <div>
+          <div
+            class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-5"
+            style="
+              background: rgba(245, 158, 11, 0.1);
+              border: 1px solid rgba(245, 158, 11, 0.3);
+            "
+          >
+            <span
+              class="w-2 h-2 rounded-full"
+              style="background: #f59e0b; box-shadow: 0 0 12px #f59e0b"
+            ></span>
+            <span class="text-xs font-medium" style="color: #fbbf24"
+              >Open now · Order by 9:30pm</span
+            >
+          </div>
+
+          <h1
+            class="reveal-text tracking-tight leading-[1.05] mb-5"
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-weight: 600;
+              font-size: clamp(2rem, 4.5vw, 3.5rem);
+              color: #fef3e2;
+            "
+          >
+            <span class="reveal-word inline-block">Pakora</span>
+            <span
+              class="reveal-word inline-block"
+              style="color: #f59e0b; font-style: italic"
+              >Indian</span
+            >
+            <span class="reveal-word inline-block">Takeaway,</span><br />
+            <span class="reveal-word inline-block">delivered</span>
+            <span class="reveal-word inline-block">to</span>
+            <span class="reveal-word inline-block">your</span>
+            <span class="reveal-word inline-block">door.</span>
+            <span
+              class="reveal-word inline-block"
+              style="color: #f59e0b; font-style: italic"
+              >15% OFF</span
+            >
+          </h1>
+
+          <p
+            class="text-base mb-7 max-w-xl"
+            style="color: rgba(245, 230, 211, 0.7); line-height: 1.6"
+          >
+            Pakora Indian Takeaway Freshly prepared by our chefs on School Lane,
+            Merseyside. From sizzling tandoori to slow-simmered curries — taste
+            the spices of India tonight. 15% Discount Order Online.
+          </p>
+
+          <div class="flex flex-wrap gap-4 mb-8">
+            <!-- <a
+              href="#order"
+              class="group px-6 py-3.5 rounded-full font-medium flex items-center gap-2 transition hover:scale-105 text-sm"
+              style="
+                background: linear-gradient(135deg, #f59e0b, #dc2626);
+                color: #fff;
+                box-shadow: 0 10px 40px -10px rgba(220, 38, 38, 0.6);
+              "
+            >
+              Order online · Save 15%
+              <iconify-icon
+                icon="solar:arrow-right-linear"
+                class="group-hover:translate-x-1 transition"
+              ></iconify-icon>
+            </a> -->
+            <span
+              class="px-5 py-2.5 rounded-full text-sm font-medium transition hover:scale-105"
+              data-glf-cuid="fbe8deb8-e118-480f-8e80-b93d3adc5c52"
+              data-glf-ruid="ab5d9d03-9d5d-4c56-9f49-5f60fdb3cefa"
+              style="
+                background: linear-gradient(135deg, #f59e0b, #dc2626);
+                color: #fff;
+                cursor: pointer;
+              "
+            >
+              Order online · Save 15%</span
+            >
+            <a
+              href="#menu"
+              data-glf-cuid="fbe8deb8-e118-480f-8e80-b93d3adc5c52"
+              data-glf-ruid="ab5d9d03-9d5d-4c56-9f49-5f60fdb3cefa"
+              class="px-6 py-3.5 rounded-full font-medium flex items-center gap-2 transition text-sm"
+              style="
+                background: rgba(245, 230, 211, 0.05);
+                border: 1px solid rgba(245, 230, 211, 0.15);
+                color: #f5e6d3;
+              "
+            >
+              <iconify-icon icon="solar:menu-dots-linear"></iconify-icon>
+              View menu
+            </a>
+          </div>
+
+          <div
+            class="flex items-center gap-6 text-sm"
+            style="color: rgba(245, 230, 211, 0.6)"
+          >
+            <div class="flex items-center gap-2">
+              <div class="flex">
+                <iconify-icon
+                  icon="solar:star-bold"
+                  style="color: #fbbf24"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="solar:star-bold"
+                  style="color: #fbbf24"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="solar:star-bold"
+                  style="color: #fbbf24"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="solar:star-bold"
+                  style="color: #fbbf24"
+                ></iconify-icon>
+                <iconify-icon
+                  icon="solar:star-bold"
+                  style="color: #fbbf24"
+                ></iconify-icon>
+              </div>
+              <span>4.8 · 920+ reviews</span>
+            </div>
+            <div class="hidden sm:flex items-center gap-2">
+              <iconify-icon icon="solar:clock-circle-linear"></iconify-icon>
+              <span>30-min delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div
+            class="relative rounded-3xl overflow-hidden p-[1px]"
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(245, 158, 11, 0.6),
+                rgba(220, 38, 38, 0.2),
+                rgba(245, 158, 11, 0.4)
+              );
+            "
+          >
+            <div
+              class="rounded-3xl overflow-hidden"
+              style="background: #0e0907"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=1200&q=80"
+                class="w-full h-[420px] object-cover"
+                alt="Indian curry"
+              />
+            </div>
+          </div>
+
+          <div
+            class="absolute -bottom-6 -left-6 rounded-2xl p-[1px]"
+            style="
+              background: linear-gradient(
+                135deg,
+                #fbbf24,
+                rgba(220, 38, 38, 0.5)
+              );
+            "
+          >
+            <div
+              class="rounded-2xl p-5 backdrop-blur-xl"
+              style="background: rgba(14, 9, 7, 0.9); min-width: 220px"
+            >
+              <div class="flex items-center gap-3 mb-2">
+                <div
+                  class="w-10 h-10 rounded-full flex items-center justify-center"
+                  style="background: linear-gradient(135deg, #f59e0b, #dc2626)"
+                >
+                  <iconify-icon
+                    icon="solar:tag-price-linear"
+                    style="color: #fff; font-size: 20px"
+                  ></iconify-icon>
+                </div>
+                <div
+                  class="text-3xl tracking-tight"
+                  style="
+                    font-family: &quot;Fraunces&quot;, serif;
+                    font-weight: 600;
+                    color: #fbbf24;
+                  "
+                >
+                  15% OFF
+                </div>
+              </div>
+              <p class="text-xs" style="color: rgba(245, 230, 211, 0.6)">
+                Every online order. No code needed.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="absolute -top-4 -right-4 rounded-2xl p-4 hidden md:block"
+            style="
+              background: rgba(245, 230, 211, 0.05);
+              backdrop-filter: blur(20px);
+              border: 1px solid rgba(245, 230, 211, 0.1);
+            "
+          >
+            <div class="flex items-center gap-2 mb-1">
+              <div
+                class="w-2 h-2 rounded-full animate-pulse"
+                style="background: #22c55e"
+              ></div>
+              <span class="text-xs" style="color: rgba(245, 230, 211, 0.7)"
+                >Live order</span
+              >
+            </div>
+            <div class="text-sm font-medium">Chicken Tikka Masala</div>
+            <div class="text-xs" style="color: rgba(245, 230, 211, 0.5)">
+              just ordered · Liverpool L4
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee strip -->
+    <section
+      class="py-6 overflow-hidden border-y"
+      style="
+        border-color: rgba(245, 230, 211, 0.08);
+        background: rgba(245, 158, 11, 0.03);
+      "
+    >
+      <div
+        class="flex gap-12 whitespace-nowrap"
+        style="animation: scroll 30s linear infinite"
+      >
+        <div class="flex gap-12 items-center">
+          <span
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-style: italic;
+              font-size: 1.25rem;
+              color: rgba(245, 230, 211, 0.5);
+            "
+            >Tandoori</span
+          >
+          <iconify-icon
+            icon="solar:fire-linear"
+            style="color: #f59e0b"
+          ></iconify-icon>
+          <span
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-style: italic;
+              font-size: 1.25rem;
+              color: rgba(245, 230, 211, 0.5);
+            "
+            >Biryani</span
+          >
+          <iconify-icon
+            icon="solar:fire-linear"
+            style="color: #f59e0b"
+          ></iconify-icon>
+          <span
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-style: italic;
+              font-size: 1.25rem;
+              color: rgba(245, 230, 211, 0.5);
+            "
+            >Curry House</span
+          >
+          <iconify-icon
+            icon="solar:fire-linear"
+            style="color: #f59e0b"
+          ></iconify-icon>
+          <span
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-style: italic;
+              font-size: 1.25rem;
+              color: rgba(245, 230, 211, 0.5);
+            "
+            >Naan & Roti</span
+          >
+          <iconify-icon
+            icon="solar:fire-linear"
+            style="color: #f59e0b"
+          ></iconify-icon>
+          <span
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-style: italic;
+              font-size: 1.25rem;
+              color: rgba(245, 230, 211, 0.5);
+            "
+            >Tikka Masala</span
+          >
+          <iconify-icon
+            icon="solar:fire-linear"
+            style="color: #f59e0b"
+          ></iconify-icon>
+          <span
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-style: italic;
+              font-size: 1.25rem;
+              color: rgba(245, 230, 211, 0.5);
+            "
+            >Vindaloo</span
+          >
+          <iconify-icon
+            icon="solar:fire-linear"
+            style="color: #f59e0b"
+          ></iconify-icon>
+        </div>
+        <div class="flex gap-12 items-center">
+          <span
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-style: italic;
+              font-size: 1.25rem;
+              color: rgba(245, 230, 211, 0.5);
+            "
+            >Tandoori</span
+          >
+          <iconify-icon
+            icon="solar:fire-linear"
+            style="color: #f59e0b"
+          ></iconify-icon>
+          <span
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-style: italic;
+              font-size: 1.25rem;
+              color: rgba(245, 230, 211, 0.5);
+            "
+            >Biryani</span
+          >
+          <iconify-icon
+            icon="solar:fire-linear"
+            style="color: #f59e0b"
+          ></iconify-icon>
+          <span
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-style: italic;
+              font-size: 1.25rem;
+              color: rgba(245, 230, 211, 0.5);
+            "
+            >Curry House</span
+          >
+          <iconify-icon
+            icon="solar:fire-linear"
+            style="color: #f59e0b"
+          ></iconify-icon>
+          <span
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-style: italic;
+              font-size: 1.25rem;
+              color: rgba(245, 230, 211, 0.5);
+            "
+            >Naan & Roti</span
+          >
+          <iconify-icon
+            icon="solar:fire-linear"
+            style="color: #f59e0b"
+          ></iconify-icon>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu / Dishes -->
+    <section id="menu" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex items-end justify-between mb-16 flex-wrap gap-6">
+          <div>
+            <div
+              class="text-xs uppercase tracking-widest mb-3"
+              style="color: #f59e0b"
+            >
+              Our menu
+            </div>
+            <h2
+              class="reveal-text tracking-tight"
+              style="
+                font-family: &quot;Fraunces&quot;, serif;
+                font-weight: 600;
+                font-size: clamp(2rem, 4.5vw, 3.5rem);
+                color: #fef3e2;
+                line-height: 1.05;
+              "
+            >
+              <span class="reveal-word inline-block">Dishes</span>
+              <span class="reveal-word inline-block">that</span>
+              <span
+                class="reveal-word inline-block"
+                style="font-style: italic; color: #f59e0b"
+                >tell</span
+              >
+              <span class="reveal-word inline-block">a</span>
+              <span class="reveal-word inline-block">story.</span>
+            </h2>
+          </div>
+          <a
+            data-glf-cuid="fbe8deb8-e118-480f-8e80-b93d3adc5c52"
+            data-glf-ruid="ab5d9d03-9d5d-4c56-9f49-5f60fdb3cefa"
+            class="text-sm flex items-center gap-2 hover:gap-3 transition-all"
+            style="color: #fbbf24; cursor: pointer"
+          >
+            See full menu
+            <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="group rounded-3xl p-[1px] transition hover:scale-[1.02]"
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(245, 158, 11, 0.4),
+                rgba(245, 230, 211, 0.05)
+              );
+            "
+          >
+            <div
+              class="rounded-3xl overflow-hidden h-full"
+              style="background: #1a0f0a"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800&q=80"
+                  class="w-full h-56 object-cover group-hover:scale-110 transition duration-700"
+                  alt="Chicken Tikka"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-2">
+                  <span
+                    class="text-xs px-2 py-1 rounded-full"
+                    style="background: rgba(220, 38, 38, 0.15); color: #fca5a5"
+                    >Chef's pick</span
+                  >
+                  <span
+                    class="text-xs flex items-center gap-1"
+                    style="color: rgba(245, 230, 211, 0.5)"
+                  >
+                    <iconify-icon
+                      icon="solar:fire-linear"
+                      style="color: #f59e0b"
+                    ></iconify-icon>
+                    Medium
+                  </span>
+                </div>
+                <h3
+                  class="text-xl tracking-tight mb-2"
+                  style="
+                    font-family: &quot;Fraunces&quot;, serif;
+                    font-weight: 600;
+                  "
+                >
+                  Chicken Tikka Masala
+                </h3>
+                <p class="text-sm mb-4" style="color: rgba(245, 230, 211, 0.6)">
+                  Charcoal-grilled chicken in a creamy tomato gravy infused with
+                  garam masala.
+                </p>
+                <div class="flex items-center justify-between">
+                  <span
+                    class="text-lg"
+                    style="
+                      color: #fbbf24;
+                      font-family: &quot;Fraunces&quot;, serif;
+                    "
+                    >£11.95</span
+                  >
+                  <button
+                    class="w-10 h-10 rounded-full flex items-center justify-center transition hover:scale-110"
+                    style="
+                      background: linear-gradient(135deg, #f59e0b, #dc2626);
+                    "
+                  >
+                    <iconify-icon
+                      icon="solar:add-circle-linear"
+                      style="color: #fff"
+                    ></iconify-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group rounded-3xl p-[1px] transition hover:scale-[1.02]"
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(245, 158, 11, 0.4),
+                rgba(245, 230, 211, 0.05)
+              );
+            "
+          >
+            <div
+              class="rounded-3xl overflow-hidden h-full"
+              style="background: #1a0f0a"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=800&q=80"
+                  class="w-full h-56 object-cover group-hover:scale-110 transition duration-700"
+                  alt="Biryani"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-2">
+                  <span
+                    class="text-xs px-2 py-1 rounded-full"
+                    style="background: rgba(34, 197, 94, 0.15); color: #86efac"
+                    >Signature</span
+                  >
+                  <span
+                    class="text-xs flex items-center gap-1"
+                    style="color: rgba(245, 230, 211, 0.5)"
+                  >
+                    <iconify-icon
+                      icon="solar:fire-linear"
+                      style="color: #f59e0b"
+                    ></iconify-icon>
+                    Mild
+                  </span>
+                </div>
+                <h3
+                  class="text-xl tracking-tight mb-2"
+                  style="
+                    font-family: &quot;Fraunces&quot;, serif;
+                    font-weight: 600;
+                  "
+                >
+                  Lamb Biryani
+                </h3>
+                <p class="text-sm mb-4" style="color: rgba(245, 230, 211, 0.6)">
+                  Slow-cooked basmati rice layered with tender lamb, saffron and
+                  fried onions.
+                </p>
+                <div class="flex items-center justify-between">
+                  <span
+                    class="text-lg"
+                    style="
+                      color: #fbbf24;
+                      font-family: &quot;Fraunces&quot;, serif;
+                    "
+                    >£ 8.30</span
+                  >
+                  <button
+                    class="w-10 h-10 rounded-full flex items-center justify-center transition hover:scale-110"
+                    style="
+                      background: linear-gradient(135deg, #f59e0b, #dc2626);
+                    "
+                  >
+                    <iconify-icon
+                      icon="solar:add-circle-linear"
+                      style="color: #fff"
+                    ></iconify-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group rounded-3xl p-[1px] transition hover:scale-[1.02]"
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(245, 158, 11, 0.4),
+                rgba(245, 230, 211, 0.05)
+              );
+            "
+          >
+            <div
+              class="rounded-3xl overflow-hidden h-full"
+              style="background: #1a0f0a"
+            >
+              <div class="overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800&q=80"
+                  class="w-full h-56 object-cover group-hover:scale-110 transition duration-700"
+                  alt="Pakora"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center gap-2 mb-2">
+                  <span
+                    class="text-xs px-2 py-1 rounded-full"
+                    style="background: rgba(34, 197, 94, 0.15); color: #86efac"
+                    >Signature</span
+                  >
+                  <span
+                    class="text-xs flex items-center gap-1"
+                    style="color: rgba(245, 230, 211, 0.5)"
+                  >
+                    <iconify-icon
+                      icon="solar:fire-linear"
+                      style="color: #f59e0b"
+                    ></iconify-icon>
+                    Mild
+                  </span>
+                </div>
+                <h3
+                  class="text-xl tracking-tight mb-2"
+                  style="
+                    font-family: &quot;Fraunces&quot;, serif;
+                    font-weight: 600;
+                  "
+                >
+                  Chicken Pakora
+                </h3>
+                <p class="text-sm mb-4" style="color: rgba(245, 230, 211, 0.6)">
+                  Crispy, golden-fried chicken pakoras , coated in a spiced gram
+                  flour batter and deep-fried to perfection.
+                </p>
+                <div class="flex items-center justify-between">
+                  <span
+                    class="text-lg"
+                    style="
+                      color: #fbbf24;
+                      font-family: &quot;Fraunces&quot;, serif;
+                    "
+                    >£6.95</span
+                  >
+                  <button
+                    class="w-10 h-10 rounded-full flex items-center justify-center transition hover:scale-110"
+                    style="
+                      background: linear-gradient(135deg, #f59e0b, #dc2626);
+                    "
+                  >
+                    <iconify-icon
+                      icon="solar:add-circle-linear"
+                      style="color: #fff"
+                    ></iconify-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discount banner -->
+    <section id="offer" class="py-20 px-6">
+      <div
+        class="max-w-6xl mx-auto rounded-[2rem] p-[1.5px] relative overflow-hidden"
+        style="
+          background: linear-gradient(
+            135deg,
+            #fbbf24 0%,
+            #dc2626 50%,
+            #f59e0b 100%
+          );
+        "
+      >
+        <div
+          class="rounded-[2rem] p-10 md:p-16 relative overflow-hidden"
+          style="background: linear-gradient(135deg, #1a0f0a, #2a1810)"
+        >
+          <div
+            class="absolute -right-20 -top-20 w-80 h-80 rounded-full opacity-20"
+            style="background: radial-gradient(circle, #f59e0b, transparent)"
+          ></div>
+          <div
+            class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full opacity-20"
+            style="background: radial-gradient(circle, #dc2626, transparent)"
+          ></div>
+
+          <div class="relative grid md:grid-cols-2 gap-10 items-center">
+            <div>
+              <div
+                class="text-xs uppercase tracking-widest mb-4"
+                style="color: #f59e0b"
+              >
+                Online exclusive
+              </div>
+              <h2
+                class="reveal-text tracking-tight mb-6"
+                style="
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-weight: 600;
+                  font-size: clamp(2rem, 5vw, 3.5rem);
+                  line-height: 1;
+                  color: #fef3e2;
+                "
+              >
+                <span class="reveal-word inline-block">Save</span>
+                <span class="reveal-word inline-block" style="color: #fbbf24"
+                  >15%</span
+                >
+                <span class="reveal-word inline-block">on</span>
+                <span class="reveal-word inline-block">every</span>
+                <span
+                  class="reveal-word inline-block"
+                  style="font-style: italic; color: #f59e0b"
+                  >order.</span
+                >
+              </h2>
+              <p class="text-lg mb-8" style="color: rgba(245, 230, 211, 0.7)">
+                Skip the queue and get your favourites delivered. Order through
+                our website and the discount applies automatically — no codes,
+                no fuss.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <a
+                  data-glf-cuid="fbe8deb8-e118-480f-8e80-b93d3adc5c52"
+                  data-glf-ruid="ab5d9d03-9d5d-4c56-9f49-5f60fdb3cefa"
+                  href="#order"
+                  class="px-7 py-4 rounded-full font-medium flex items-center gap-2 transition hover:scale-105"
+                  style="
+                    background: linear-gradient(135deg, #f59e0b, #dc2626);
+                    color: #fff;
+                  "
+                >
+                  Start your order
+                  <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                </a>
+                <div
+                  class="px-5 py-4 rounded-full text-sm flex items-center gap-2"
+                  style="
+                    background: rgba(245, 230, 211, 0.05);
+                    color: rgba(245, 230, 211, 0.7);
+                  "
+                >
+                  <iconify-icon icon="solar:phone-linear"></iconify-icon>
+                  0151 928 1895
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3">
+              <div
+                class="rounded-2xl p-5 text-center"
+                style="
+                  background: rgba(245, 230, 211, 0.05);
+                  border: 1px solid rgba(245, 230, 211, 0.1);
+                "
+              >
+                <iconify-icon
+                  icon="solar:cart-linear"
+                  style="color: #f59e0b; font-size: 28px"
+                ></iconify-icon>
+                <div
+                  class="text-3xl tracking-tight my-2"
+                  style="
+                    font-family: &quot;Fraunces&quot;, serif;
+                    font-weight: 600;
+                  "
+                >
+                  15%
+                </div>
+                <div class="text-xs" style="color: rgba(245, 230, 211, 0.6)">
+                  off online orders
+                </div>
+              </div>
+              <div
+                class="rounded-2xl p-5 text-center"
+                style="
+                  background: rgba(245, 230, 211, 0.05);
+                  border: 1px solid rgba(245, 230, 211, 0.1);
+                "
+              >
+                <iconify-icon
+                  icon="solar:delivery-linear"
+                  style="color: #f59e0b; font-size: 28px"
+                ></iconify-icon>
+                <div
+                  class="text-3xl tracking-tight my-2"
+                  style="
+                    font-family: &quot;Fraunces&quot;, serif;
+                    font-weight: 600;
+                  "
+                >
+                  30<span style="font-size: 0.6em">m</span>
+                </div>
+                <div class="text-xs" style="color: rgba(245, 230, 211, 0.6)">
+                  avg delivery
+                </div>
+              </div>
+              <div
+                class="rounded-2xl p-5 text-center"
+                style="
+                  background: rgba(245, 230, 211, 0.05);
+                  border: 1px solid rgba(245, 230, 211, 0.1);
+                "
+              >
+                <iconify-icon
+                  icon="solar:medal-star-linear"
+                  style="color: #f59e0b; font-size: 28px"
+                ></iconify-icon>
+                <div
+                  class="text-3xl tracking-tight my-2"
+                  style="
+                    font-family: &quot;Fraunces&quot;, serif;
+                    font-weight: 600;
+                  "
+                >
+                  4.8
+                </div>
+                <div class="text-xs" style="color: rgba(245, 230, 211, 0.6)">
+                  customer rating
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Story -->
+    <section id="about" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div
+            class="rounded-3xl overflow-hidden p-[1px]"
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(245, 158, 11, 0.5),
+                rgba(245, 230, 211, 0.1)
+              );
+            "
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542367592-8849eb950fd8?w=1200&q=80"
+              class="rounded-3xl w-full h-[600px] object-cover"
+              alt="Indian chef cooking"
+            />
+          </div>
+          <div
+            class="absolute -bottom-6 -right-6 rounded-2xl p-5 max-w-[240px]"
+            style="
+              background: rgba(14, 9, 7, 0.95);
+              backdrop-filter: blur(20px);
+              border: 1px solid rgba(245, 158, 11, 0.3);
+            "
+          >
+            <iconify-icon
+              icon="solar:chef-hat-linear"
+              style="color: #f59e0b; font-size: 28px"
+            ></iconify-icon>
+            <p class="text-sm mt-2" style="color: rgba(245, 230, 211, 0.8)">
+              Family recipes, perfected over three generations.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="text-xs uppercase tracking-widest mb-3"
+            style="color: #f59e0b"
+          >
+            Our story
+          </div>
+          <h2
+            class="reveal-text tracking-tight mb-8"
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-weight: 600;
+              font-size: clamp(2rem, 4.5vw, 3.25rem);
+              line-height: 1.05;
+              color: #fef3e2;
+            "
+          >
+            <span class="reveal-word inline-block">A</span>
+            <span
+              class="reveal-word inline-block"
+              style="font-style: italic; color: #f59e0b"
+              >taste</span
+            >
+            <span class="reveal-word inline-block">of</span>
+            <span class="reveal-word inline-block">home,</span>
+            <span class="reveal-word inline-block">on</span>
+            <span class="reveal-word inline-block">School</span>
+            <span class="reveal-word inline-block">Lane.</span>
+          </h2>
+
+          <p
+            class="text-lg mb-6"
+            style="color: rgba(245, 230, 211, 0.7); line-height: 1.7"
+          >
+            Pakora is an authentic Indian takeaway tucked away on School Lane,
+            Merseyside. We bring you the finest, freshest Indian cuisine —
+            prepared daily using time-honoured recipes and the best local
+            ingredients.
+          </p>
+          <p
+            class="text-lg mb-10"
+            style="color: rgba(245, 230, 211, 0.7); line-height: 1.7"
+          >
+            From the gentle warmth of korma to the smoky char of the tandoor,
+            every dish is made to order with care, spice, and a whole lot of
+            heart.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6">
+            <div>
+              <div
+                class="text-4xl tracking-tight mb-1"
+                style="
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-weight: 600;
+                  color: #fbbf24;
+                "
+              >
+                12+
+              </div>
+              <div class="text-sm" style="color: rgba(245, 230, 211, 0.6)">
+                Years serving Merseyside
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-4xl tracking-tight mb-1"
+                style="
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-weight: 600;
+                  color: #fbbf24;
+                "
+              >
+                60+
+              </div>
+              <div class="text-sm" style="color: rgba(245, 230, 211, 0.6)">
+                Authentic dishes daily
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-4xl tracking-tight mb-1"
+                style="
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-weight: 600;
+                  color: #fbbf24;
+                "
+              >
+                100%
+              </div>
+              <div class="text-sm" style="color: rgba(245, 230, 211, 0.6)">
+                Halal certified
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-4xl tracking-tight mb-1"
+                style="
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-weight: 600;
+                  color: #fbbf24;
+                "
+              >
+                Daily
+              </div>
+              <div class="text-sm" style="color: rgba(245, 230, 211, 0.6)">
+                Fresh ingredients
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section
+      id="order"
+      class="py-24 px-6"
+      style="background: rgba(245, 158, 11, 0.02)"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <div
+            class="text-xs uppercase tracking-widest mb-3"
+            style="color: #f59e0b"
+          >
+            Order in 3 steps
+          </div>
+          <h2
+            class="reveal-text tracking-tight"
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-weight: 600;
+              font-size: clamp(2rem, 4.5vw, 3.25rem);
+              line-height: 1.05;
+              color: #fef3e2;
+            "
+          >
+            <span class="reveal-word inline-block">From</span>
+            <span class="reveal-word inline-block">our</span>
+            <span
+              class="reveal-word inline-block"
+              style="font-style: italic; color: #f59e0b"
+              >kitchen</span
+            >
+            <span class="reveal-word inline-block">to</span>
+            <span class="reveal-word inline-block">your</span>
+            <span class="reveal-word inline-block">table.</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="rounded-3xl p-[1px]"
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(245, 158, 11, 0.4),
+                rgba(245, 230, 211, 0.05)
+              );
+            "
+          >
+            <div class="rounded-3xl p-8 h-full" style="background: #1a0f0a">
+              <div
+                class="text-sm mb-4"
+                style="
+                  color: #f59e0b;
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-style: italic;
+                "
+              >
+                Step 01
+              </div>
+              <iconify-icon
+                icon="solar:menu-dots-linear"
+                style="color: #fbbf24; font-size: 36px"
+              ></iconify-icon>
+              <h3
+                class="text-2xl tracking-tight mt-4 mb-3"
+                style="
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-weight: 600;
+                "
+              >
+                Browse the menu
+              </h3>
+              <p
+                class="text-sm"
+                style="color: rgba(245, 230, 211, 0.6); line-height: 1.6"
+              >
+                Explore over 60 dishes — from creamy curries to sizzling
+                tandoori specials. Filter by spice, diet or occasion.
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-3xl p-[1px]"
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(245, 158, 11, 0.4),
+                rgba(245, 230, 211, 0.05)
+              );
+            "
+          >
+            <div class="rounded-3xl p-8 h-full" style="background: #1a0f0a">
+              <div
+                class="text-sm mb-4"
+                style="
+                  color: #f59e0b;
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-style: italic;
+                "
+              >
+                Step 02
+              </div>
+              <iconify-icon
+                icon="solar:cart-check-linear"
+                style="color: #fbbf24; font-size: 36px"
+              ></iconify-icon>
+              <h3
+                class="text-2xl tracking-tight mt-4 mb-3"
+                style="
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-weight: 600;
+                "
+              >
+                Order online · save 15%
+              </h3>
+              <p
+                class="text-sm"
+                style="color: rgba(245, 230, 211, 0.6); line-height: 1.6"
+              >
+                Add to cart and check out in seconds. Your 15% online discount
+                is applied automatically at checkout.
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-3xl p-[1px]"
+            style="
+              background: linear-gradient(
+                135deg,
+                rgba(245, 158, 11, 0.4),
+                rgba(245, 230, 211, 0.05)
+              );
+            "
+          >
+            <div class="rounded-3xl p-8 h-full" style="background: #1a0f0a">
+              <div
+                class="text-sm mb-4"
+                style="
+                  color: #f59e0b;
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-style: italic;
+                "
+              >
+                Step 03
+              </div>
+              <iconify-icon
+                icon="solar:delivery-linear"
+                style="color: #fbbf24; font-size: 36px"
+              ></iconify-icon>
+              <h3
+                class="text-2xl tracking-tight mt-4 mb-3"
+                style="
+                  font-family: &quot;Fraunces&quot;, serif;
+                  font-weight: 600;
+                "
+              >
+                Hot, fast & fresh
+              </h3>
+              <p
+                class="text-sm"
+                style="color: rgba(245, 230, 211, 0.6); line-height: 1.6"
+              >
+                Collect from School Lane in 20 minutes, or have it delivered hot
+                to your door across Merseyside in around 30.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <div
+            class="text-xs uppercase tracking-widest mb-3"
+            style="color: #f59e0b"
+          >
+            Loved locally
+          </div>
+          <h2
+            class="reveal-text tracking-tight"
+            style="
+              font-family: &quot;Fraunces&quot;, serif;
+              font-weight: 600;
+              font-size: clamp(2rem, 4.5vw, 3.25rem);
+              line-height: 1.05;
+              color: #fef3e2;
+            "
+          >
+            <span class="reveal-word inline-block">What</span>
+            <span class="reveal-word inline-block">our</span>
+            <span
+              class="reveal-word inline-block"
+              style="font-style: italic; color: #f59e0b"
+              >guests</span
+            >
+            <span class="reveal-word inline-block">say.</span>
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div
+            class="rounded-2xl p-6"
+            style="
+              background: rgba(245, 230, 211, 0.03);
+              border: 1px solid rgba(245, 230, 211, 0.08);
+            "
+          >
+            <div class="flex mb-4">
+              <iconify-icon
+                icon="solar:star-bold"
+                style="color: #fbbf24"
+              ></iconify-icon>
+              <iconify-icon
+                icon="solar:star-bold"
+                style="color: #fbbf24"
+              ></iconify-icon>
+              <iconify-icon
+                icon="solar:star-bold"
+                style="color: #fbbf24"
+              ></iconify-icon>
+              <iconify-icon
+                icon="solar:star-bold"
+                style="color: #fbbf24"
+              ></iconify-icon>
+              <iconify-icon
+                icon="solar:star-bold"
+                style="color: #fbbf24"
+              ></iconify-icon>
+            </div>
+            <p
+              style="
+                color: rgba(245, 230, 211, 0.85);
+                line-height: 1.6;
+                font-family: &quot;Fraunces&quot;, serif;
+                font-size: 1.0625rem;
+              "
+            >
+              "Easily the best curry in Merseyside. The lamb biryani is unreal
+              and the naan is pillowy soft. We order weekly."
+            </p>
+            <div class="mt-6 flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full flex items-center justify-center"
+                style="
+                  background: linear-gradient(135deg, #f59e0b, #dc2626);
+                  color: #fff;
+                  font-weight: 600;
+                "
+              >
+                A
+              </div>
+              <div>
+                <div class="text-sm font-medium">Aaron H.</div>
+                <div class="text-xs" style="color: rgba(245, 230, 211, 0.5)">
+                  Liverpool · Regular
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-2xl p-6"
+            style="
+              background: rgba(245, 230, 211, 0.03);
+              border: 1px solid rgba(245, 230, 211, 0.08);
+            "
+          >
+            <div class="flex mb-4">
+              <iconify-icon
+                icon="solar:star-bold"
+                style="color: #fbbf24"
+              ></iconify-icon>
+              <iconify-icon
+                icon="solar:star-bold"
+                style="color: #fbbf24"
+              ></iconify-icon>
+              <iconify-icon
+                icon="solar:star-bold"
+                style="color: #fbbf24"
+              ></iconify-icon>
+              <iconify-icon
+                icon="solar:star-bold"
+                style="color: #fbbf24"
+              ></iconify-icon>
+              <iconify-icon
+                icon="solar:star-bold"
+                style="color: #fbbf24"
+              ></iconify-icon>
+            </div>
+            <p
+              style="
+                color: rgba(245, 230, 211, 0.85);
+                line-height: 1.6;
+                font-family: &quot;Fraunces&quot;, serif;
+                font-size: 1.0625rem;
+              "
+            >
+              "The 15% online discount makes a Friday night curry such a treat.
+              Always piping hot, always packed with flavour."
+            </p>
+            <div class="mt-6 flex items-center gap-3">
+              <div
+                class="w-10 h-10 rounded-full flex items-center justify-center"
+                style="
+                  background: linear-gradient(135deg, #f59e0b, #dc2626);
+                  color: #fff;
+                  font-weight: 600;
+                "
+              >
+                P
+              </div>
+              <div>
+                <div class="text-sm font-medium">Priya K.</div>
+                <div class="text-xs" style="color: rgba(245, 230, 211, 0.5)">
+                  Wirral · Returning
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      id="location"
+      class="border-t border-white/5 bg-neutral-950/80 backdrop-blur-lg pt-16 pb-8 px-6 md:px-12 mt-auto"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12"
+      >
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-2 text-brand-400 mb-4">
+            <iconify-icon
+              icon="solar:flame-linear"
+              width="24"
+              height="24"
+              stroke-width="1.5"
+            ></iconify-icon>
+            <span class="text-xl font-semibold tracking-tight text-white"
+              >Pakora</span
+            >
+          </div>
+          <p
+            class="text-sm text-neutral-400 font-medium max-w-sm mb-6 leading-relaxed"
+          >
+            The finest Indian takeaway in Merseyside. Experience the perfect
+            blend of traditional spices and modern culinary excellence.
+          </p>
+          <div class="flex items-center gap-4">
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all"
+            >
+              <iconify-icon
+                icon="solar:phone-linear"
+                stroke-width="1.5"
+              ></iconify-icon>
+            </a>
+
+            <span
+              class="reveal-word inline-block"
+              style="color: #f59e0b; font-style: italic"
+              >0151 928 1895</span
+            >
+            <a
+              href="#"
+              class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-neutral-400 hover:text-white hover:bg-white/5 transition-all"
+            >
+              <iconify-icon
+                icon="solar:letter-linear"
+                stroke-width="1.5"
+              ></iconify-icon>
+            </a>
+
+            <span
+              class="reveal-word inline-block"
+              style="color: #f59e0b; font-style: italic"
+              >info@pakoraliverpool.com</span
+            >
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-4">Location</h4>
+          <address
+            class="text-sm text-neutral-400 font-medium not-italic leading-relaxed"
+            id="location-address"
+          >
+            Pakora Indian Takeaway<br />
+            36 School Ln, Litherland.<br />
+            Liverpool L21 7LZ, Merseyside.<br />
+            United Kingdom.
+          </address>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold text-white mb-4">Opening Hours</h4>
+          <!-- <ul class="text-sm text-neutral-400 font-medium space-y-2">
+            <li class="flex justify-between">
+              <span>Mon - Sunday </span> <span>4:30 PM - 10:00 PM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Wednesday</span> <span> Closed</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Saturday</span><span>4:00 PM - 10:00 PM</span>
+            </li>
+          </ul> -->
+          <ul class="text-sm text-neutral-400 font-medium space-y-2">
+            <li class="flex justify-between">
+              <span>Mon – Tue</span>
+              <span>4:30 PM – 10:00 PM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Wed</span>
+              <span style="color: #f87171">Closed</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Thu – Fri</span>
+              <span>4:30 PM – 10:00 PM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Sat</span>
+              <span>4:00 PM – 10:00 PM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Sun</span>
+              <span>4:30 PM – 10:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <p class="text-xs font-medium text-neutral-500">
+          &copy; <span id="year"></span> Pakora Indian Takeaway. All rights
+          reserved.
+        </p>
+        <div
+          class="flex items-center gap-6 text-xs font-medium text-neutral-500"
+        >
+          <a href="#" class="hover:text-white transition-colors"
+            >Privacy Policy</a
+          >
+          <a href="#" class="hover:text-white transition-colors"
+            >Terms of Service</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
